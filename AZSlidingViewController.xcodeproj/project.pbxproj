@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		533C3F411582504200FB7A68 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C3F401582504200FB7A68 /* QuartzCore.framework */; };
+		5345A499158137FD00BA6140 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345A498158137FD00BA6140 /* UIKit.framework */; };
+		5345A49B158137FD00BA6140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345A49A158137FD00BA6140 /* Foundation.framework */; };
+		5345A49D158137FD00BA6140 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345A49C158137FD00BA6140 /* CoreGraphics.framework */; };
+		5345A4A3158137FD00BA6140 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5345A4A1158137FD00BA6140 /* InfoPlist.strings */; };
+		5345A4A5158137FD00BA6140 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5345A4A4158137FD00BA6140 /* main.m */; };
+		5345A4A9158137FD00BA6140 /* AZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5345A4A8158137FD00BA6140 /* AZAppDelegate.m */; };
+		5345A4AC158137FD00BA6140 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5345A4AA158137FD00BA6140 /* MainStoryboard.storyboard */; };
+		5345A4AF158137FD00BA6140 /* AZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5345A4AE158137FD00BA6140 /* AZViewController.m */; };
+		5345A4B7158137FD00BA6140 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345A4B6158137FD00BA6140 /* SenTestingKit.framework */; };
+		5345A4B8158137FD00BA6140 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345A498158137FD00BA6140 /* UIKit.framework */; };
+		5345A4B9158137FD00BA6140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345A49A158137FD00BA6140 /* Foundation.framework */; };
+		5345A4C1158137FD00BA6140 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5345A4BF158137FD00BA6140 /* InfoPlist.strings */; };
+		5345A4C4158137FD00BA6140 /* AZSlidingViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5345A4C3158137FD00BA6140 /* AZSlidingViewControllerTests.m */; };
+		5345A4D01581381500BA6140 /* AZSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5345A4CF1581381500BA6140 /* AZSlidingViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5345A4BA158137FD00BA6140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5345A48B158137FD00BA6140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5345A493158137FD00BA6140;
+			remoteInfo = AZSlidingViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		533C3F401582504200FB7A68 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5345A494158137FD00BA6140 /* AZSlidingViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZSlidingViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5345A498158137FD00BA6140 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5345A49A158137FD00BA6140 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5345A49C158137FD00BA6140 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5345A4A0158137FD00BA6140 /* AZSlidingViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AZSlidingViewController-Info.plist"; sourceTree = "<group>"; };
+		5345A4A2158137FD00BA6140 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5345A4A4158137FD00BA6140 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5345A4A6158137FD00BA6140 /* AZSlidingViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AZSlidingViewController-Prefix.pch"; sourceTree = "<group>"; };
+		5345A4A7158137FD00BA6140 /* AZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZAppDelegate.h; sourceTree = "<group>"; };
+		5345A4A8158137FD00BA6140 /* AZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZAppDelegate.m; sourceTree = "<group>"; };
+		5345A4AB158137FD00BA6140 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		5345A4AD158137FD00BA6140 /* AZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZViewController.h; sourceTree = "<group>"; };
+		5345A4AE158137FD00BA6140 /* AZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZViewController.m; sourceTree = "<group>"; };
+		5345A4B5158137FD00BA6140 /* AZSlidingViewControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZSlidingViewControllerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5345A4B6158137FD00BA6140 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5345A4BE158137FD00BA6140 /* AZSlidingViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AZSlidingViewControllerTests-Info.plist"; sourceTree = "<group>"; };
+		5345A4C0158137FD00BA6140 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5345A4C2158137FD00BA6140 /* AZSlidingViewControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZSlidingViewControllerTests.h; sourceTree = "<group>"; };
+		5345A4C3158137FD00BA6140 /* AZSlidingViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZSlidingViewControllerTests.m; sourceTree = "<group>"; };
+		5345A4CE1581381500BA6140 /* AZSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZSlidingViewController.h; sourceTree = "<group>"; };
+		5345A4CF1581381500BA6140 /* AZSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZSlidingViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5345A491158137FD00BA6140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533C3F411582504200FB7A68 /* QuartzCore.framework in Frameworks */,
+				5345A499158137FD00BA6140 /* UIKit.framework in Frameworks */,
+				5345A49B158137FD00BA6140 /* Foundation.framework in Frameworks */,
+				5345A49D158137FD00BA6140 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5345A4B1158137FD00BA6140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5345A4B7158137FD00BA6140 /* SenTestingKit.framework in Frameworks */,
+				5345A4B8158137FD00BA6140 /* UIKit.framework in Frameworks */,
+				5345A4B9158137FD00BA6140 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5345A489158137FD00BA6140 = {
+			isa = PBXGroup;
+			children = (
+				5345A49E158137FD00BA6140 /* AZSlidingViewController */,
+				5345A4BC158137FD00BA6140 /* AZSlidingViewControllerTests */,
+				5345A497158137FD00BA6140 /* Frameworks */,
+				5345A495158137FD00BA6140 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5345A495158137FD00BA6140 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5345A494158137FD00BA6140 /* AZSlidingViewController.app */,
+				5345A4B5158137FD00BA6140 /* AZSlidingViewControllerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5345A497158137FD00BA6140 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				533C3F401582504200FB7A68 /* QuartzCore.framework */,
+				5345A498158137FD00BA6140 /* UIKit.framework */,
+				5345A49A158137FD00BA6140 /* Foundation.framework */,
+				5345A49C158137FD00BA6140 /* CoreGraphics.framework */,
+				5345A4B6158137FD00BA6140 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5345A49E158137FD00BA6140 /* AZSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5345A4CD1581380200BA6140 /* lib */,
+				5345A4A7158137FD00BA6140 /* AZAppDelegate.h */,
+				5345A4A8158137FD00BA6140 /* AZAppDelegate.m */,
+				5345A4AA158137FD00BA6140 /* MainStoryboard.storyboard */,
+				5345A4AD158137FD00BA6140 /* AZViewController.h */,
+				5345A4AE158137FD00BA6140 /* AZViewController.m */,
+				5345A49F158137FD00BA6140 /* Supporting Files */,
+			);
+			path = AZSlidingViewController;
+			sourceTree = "<group>";
+		};
+		5345A49F158137FD00BA6140 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5345A4A0158137FD00BA6140 /* AZSlidingViewController-Info.plist */,
+				5345A4A1158137FD00BA6140 /* InfoPlist.strings */,
+				5345A4A4158137FD00BA6140 /* main.m */,
+				5345A4A6158137FD00BA6140 /* AZSlidingViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5345A4BC158137FD00BA6140 /* AZSlidingViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5345A4C2158137FD00BA6140 /* AZSlidingViewControllerTests.h */,
+				5345A4C3158137FD00BA6140 /* AZSlidingViewControllerTests.m */,
+				5345A4BD158137FD00BA6140 /* Supporting Files */,
+			);
+			path = AZSlidingViewControllerTests;
+			sourceTree = "<group>";
+		};
+		5345A4BD158137FD00BA6140 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5345A4BE158137FD00BA6140 /* AZSlidingViewControllerTests-Info.plist */,
+				5345A4BF158137FD00BA6140 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5345A4CD1581380200BA6140 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				5345A4CE1581381500BA6140 /* AZSlidingViewController.h */,
+				5345A4CF1581381500BA6140 /* AZSlidingViewController.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5345A493158137FD00BA6140 /* AZSlidingViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5345A4C7158137FD00BA6140 /* Build configuration list for PBXNativeTarget "AZSlidingViewController" */;
+			buildPhases = (
+				5345A490158137FD00BA6140 /* Sources */,
+				5345A491158137FD00BA6140 /* Frameworks */,
+				5345A492158137FD00BA6140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AZSlidingViewController;
+			productName = AZSlidingViewController;
+			productReference = 5345A494158137FD00BA6140 /* AZSlidingViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5345A4B4158137FD00BA6140 /* AZSlidingViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5345A4CA158137FD00BA6140 /* Build configuration list for PBXNativeTarget "AZSlidingViewControllerTests" */;
+			buildPhases = (
+				5345A4B0158137FD00BA6140 /* Sources */,
+				5345A4B1158137FD00BA6140 /* Frameworks */,
+				5345A4B2158137FD00BA6140 /* Resources */,
+				5345A4B3158137FD00BA6140 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5345A4BB158137FD00BA6140 /* PBXTargetDependency */,
+			);
+			name = AZSlidingViewControllerTests;
+			productName = AZSlidingViewControllerTests;
+			productReference = 5345A4B5158137FD00BA6140 /* AZSlidingViewControllerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5345A48B158137FD00BA6140 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AZ;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 5345A48E158137FD00BA6140 /* Build configuration list for PBXProject "AZSlidingViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5345A489158137FD00BA6140;
+			productRefGroup = 5345A495158137FD00BA6140 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5345A493158137FD00BA6140 /* AZSlidingViewController */,
+				5345A4B4158137FD00BA6140 /* AZSlidingViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5345A492158137FD00BA6140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5345A4A3158137FD00BA6140 /* InfoPlist.strings in Resources */,
+				5345A4AC158137FD00BA6140 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5345A4B2158137FD00BA6140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5345A4C1158137FD00BA6140 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5345A4B3158137FD00BA6140 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5345A490158137FD00BA6140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5345A4A5158137FD00BA6140 /* main.m in Sources */,
+				5345A4A9158137FD00BA6140 /* AZAppDelegate.m in Sources */,
+				5345A4AF158137FD00BA6140 /* AZViewController.m in Sources */,
+				5345A4D01581381500BA6140 /* AZSlidingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5345A4B0158137FD00BA6140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5345A4C4158137FD00BA6140 /* AZSlidingViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5345A4BB158137FD00BA6140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5345A493158137FD00BA6140 /* AZSlidingViewController */;
+			targetProxy = 5345A4BA158137FD00BA6140 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5345A4A1158137FD00BA6140 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5345A4A2158137FD00BA6140 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5345A4AA158137FD00BA6140 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5345A4AB158137FD00BA6140 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		5345A4BF158137FD00BA6140 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5345A4C0158137FD00BA6140 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5345A4C5158137FD00BA6140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5345A4C6158137FD00BA6140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5345A4C8158137FD00BA6140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AZSlidingViewController/AZSlidingViewController-Prefix.pch";
+				INFOPLIST_FILE = "AZSlidingViewController/AZSlidingViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5345A4C9158137FD00BA6140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AZSlidingViewController/AZSlidingViewController-Prefix.pch";
+				INFOPLIST_FILE = "AZSlidingViewController/AZSlidingViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5345A4CB158137FD00BA6140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AZSlidingViewController.app/AZSlidingViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AZSlidingViewController/AZSlidingViewController-Prefix.pch";
+				INFOPLIST_FILE = "AZSlidingViewControllerTests/AZSlidingViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5345A4CC158137FD00BA6140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AZSlidingViewController.app/AZSlidingViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AZSlidingViewController/AZSlidingViewController-Prefix.pch";
+				INFOPLIST_FILE = "AZSlidingViewControllerTests/AZSlidingViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5345A48E158137FD00BA6140 /* Build configuration list for PBXProject "AZSlidingViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5345A4C5158137FD00BA6140 /* Debug */,
+				5345A4C6158137FD00BA6140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5345A4C7158137FD00BA6140 /* Build configuration list for PBXNativeTarget "AZSlidingViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5345A4C8158137FD00BA6140 /* Debug */,
+				5345A4C9158137FD00BA6140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5345A4CA158137FD00BA6140 /* Build configuration list for PBXNativeTarget "AZSlidingViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5345A4CB158137FD00BA6140 /* Debug */,
+				5345A4CC158137FD00BA6140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5345A48B158137FD00BA6140 /* Project object */;
+}
