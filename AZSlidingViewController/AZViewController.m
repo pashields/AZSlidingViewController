@@ -94,4 +94,9 @@
 {
     NSLog(@"New state is %@", az_sliding_right == newState ? @"right" : @"left");
 }
+
+- (void)azSlidingViewControllerWillBeginSliding:(AZSlidingViewController *)viewController
+{
+    NSLog(@"Beginning the slide");
+}
 @end

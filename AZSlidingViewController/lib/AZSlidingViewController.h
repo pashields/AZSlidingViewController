@@ -32,6 +32,7 @@ typedef enum {
 - (void)azSlidingViewController:(AZSlidingViewController *)viewController willChangeStateTo:(AZSlidingDirection)newState;
 - (void)azSlidingViewController:(AZSlidingViewController *)viewController didChangeStateTo:(AZSlidingDirection)newState;
 - (void)azSlidingViewControllerDidSlide:(AZSlidingViewController *)viewController;
+- (void)azSlidingViewControllerWillBeginSliding:(AZSlidingViewController *)viewController;
 @end
 
 @interface AZSlidingViewController : UIViewController

@@ -115,7 +115,13 @@ typedef void (^AnimationCompletionBlock)(BOOL finished);
     
     AZSlidingDirection _slidingState = [packedSlidingState intValue];
     slidingState = _slidingState;
-    self.dragging = NO;
+    if (self.dragging) {
+        self.dragging = NO;
+    } else {
+        if ([self.delegate respondsToSelector:@selector(azSlidingViewControllerWillBeginSliding:)]) {
+            [self.delegate azSlidingViewControllerWillBeginSliding:self];
+        }
+    }
     AnimationBlock animations; AnimationCompletionBlock completion;
     
     if ([self.delegate respondsToSelector:@selector(azSlidingViewController:willChangeStateTo:)]) {
@@ -233,6 +239,9 @@ typedef void (^AnimationCompletionBlock)(BOOL finished);
 #pragma mark UIScrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
+    if ([self.delegate respondsToSelector:@selector(azSlidingViewControllerWillBeginSliding:)]) {
+        [self.delegate azSlidingViewControllerWillBeginSliding:self];
+    }
     self.dragging = YES;
     [self expandScrollView];
 }
@@ -249,7 +258,6 @@ typedef void (^AnimationCompletionBlock)(BOOL finished);
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     AZ_DEBUG(@"Done Decelerating");
-    self.dragging = NO;
     if (self.scrollView.contentOffset.x > self.maxCovered / 2) {
         self.slidingState = az_sliding_left;
     } else {
