@@ -78,6 +78,7 @@ typedef void (^AnimationCompletionBlock)(BOOL finished);
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView.bounces = NO;
     self.scrollView.backgroundColor = [UIColor clearColor];
+    self.scrollView.autoresizesSubviews = NO;
     self.view = self.scrollView;
     
     [self.contentView removeFromSuperview];
@@ -105,6 +106,26 @@ typedef void (^AnimationCompletionBlock)(BOOL finished);
     self.slidingState = direction;
     
     self.animationLength = animationLengthCopy;
+    
+    [self.scrollView addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionOld context:NULL];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (object == self.scrollView && [keyPath isEqualToString:@"frame"]) {
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.contentSize.width, self.scrollView.frame.size.height);
+        NSValue *oldFrameValue = [change objectForKey:NSKeyValueChangeOldKey];
+        CGRect oldFrame = oldFrameValue.CGRectValue;
+        CGFloat rightChange = (oldFrame.origin.x + oldFrame.size.width) - (self.scrollView.frame.origin.x + self.scrollView.frame.size.width);
+        CGRect _initialRect = self.initialRect;
+        _initialRect.origin.x -= rightChange;
+        self.initialRect = _initialRect;
+    }
+}
+
+- (void)dealloc
+{
+    [self.scrollView removeObserver:self forKeyPath:@"frame"];
 }
 
 - (void)_setSlidingState:(NSNumber *)packedSlidingState
